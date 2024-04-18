@@ -1,0 +1,12 @@
+grid-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    flex-direction: column;
+    justify-content: center;
+}
+
+total-grid {
+    justify-content: center;
+}
