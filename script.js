@@ -16,6 +16,13 @@ function main() {
         }
     }
 
+    const resetButton = document.querySelector("#resetGrid");
+    resetButton.addEventListener("click", function (e) {
+        const squares = document.querySelectorAll("square");
+        for (var i = 0; i < squares.length; i ++) {
+            squares[i].style.backgroundColor = "pink";
+        }
+    });
 
     const button = document.querySelector("#makeGrid");
     button.addEventListener("click", function (e) {
