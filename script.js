@@ -43,6 +43,10 @@ function main() {
 
     const button = document.querySelector("#makeGrid");
     button.addEventListener("click", function (e) {
+        if (document.querySelector(".grid-container").firstChild) {
+            document.querySelector("#error").textContent = "Please clear the grid prior to resizing."
+            return
+        }
         var input = document.querySelector("input");
         var gridSize = input.value;
         input.value = '';
@@ -51,6 +55,7 @@ function main() {
 
     const clearButton = document.querySelector("#clearGrid");
     clearButton.addEventListener("click", function (e) {
+        document.querySelector("#error").textContent = "";
         clearGrid();
     });
 }
