@@ -1,3 +1,9 @@
+/*
+Script.js
+Etch-a-Sketch
+Keith S.
+*/
+
 function main() {
 
     function createGrid(size) {
