@@ -12,6 +12,9 @@ function main() {
                 square.addEventListener("mouseover", function (e) {
                     square.style.backgroundColor = "gray";
                 });
+                square.addEventListener("click", function (e) {
+                    square.style.backgroundColor = "blue";
+                });
             }
         }
     }
@@ -26,7 +29,10 @@ function main() {
 
     const button = document.querySelector("#makeGrid");
     button.addEventListener("click", function (e) {
-        createGrid(16);
+        var input = document.querySelector("input");
+        var gridSize = input.value;
+        input.value = '';
+        createGrid(gridSize);
     });
 }
 
