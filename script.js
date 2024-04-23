@@ -19,6 +19,14 @@ function main() {
         }
     }
 
+    function clearGrid() {
+        const container = document.querySelector(".grid-container");
+        const allrows = document.querySelectorAll("#row");
+        for (row in allrows) {
+            container.removeChild(container.lastChild);
+        }
+    }
+
     const resetButton = document.querySelector("#resetGrid");
     resetButton.addEventListener("click", function (e) {
         const squares = document.querySelectorAll("square");
@@ -33,6 +41,11 @@ function main() {
         var gridSize = input.value;
         input.value = '';
         createGrid(gridSize);
+    });
+
+    const clearButton = document.querySelector("#clearGrid");
+    clearButton.addEventListener("click", function (e) {
+        clearGrid();
     });
 }
 
