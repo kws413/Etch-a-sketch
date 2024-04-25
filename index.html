@@ -11,18 +11,22 @@
         <h1 id="title-header">Etch-a-Sketch</h1>
     </header>
 
-    <div class='grid-container'></div>
+    <grid-center>
+        <div class='grid-container'></div>
+    </grid-center>
 
-    <label for="gridSize">Grid Size:</label>
-    <input type="text" required>
+    <grid-options>
+        <label for="gridSize">Grid Size:</label>
+        <input type="text" required>
 
-    <button id="makeGrid">Create Grid</button>
+        <button id="makeGrid">Create Grid</button>
 
-    <button id="resetGrid">Reset</button>
+        <button id="resetGrid">Reset</button>
 
-    <button id="clearGrid">Clear</button>
+        <button id="clearGrid">Clear</button>
 
-    <p id="error"></p>
+        <p id="error"></p>
+    </grid-options>
 </body>
 <script src="script.js"></script>
 </html>
